@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/kh-logo.png">
+    <link rel="stylesheet" href="styling.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@400;500;700&family=Josefin+Sans&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700&family=Nunito:wght@200;700;800&family=Quicksand:wght@300;400;600;700&family=Rubik+Bubbles&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Supermercado+One&display=swap" rel="stylesheet">
+
+    <title>X-O game</title>
+</head>
+<body>
+<div>
+    <header>
+        <img src="img/kh-logo.png" alt="logo" id="logoImg">
+        <div>   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon iconbtn hidden" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+          </svg>  </div>
+    </header>
+</div>
+<section class="playersContainer">
+    <div class="playerXCont active">
+        <img src="img/x.png" alt="O player" class="playerPic">
+        <p style="font-weight: 600;">Score:<span class="xScore"></span></p>
+    </div>
+
+ <div  class="playerOCont">
+    <img src="img/o.png" alt="X player" class="playerPic2">
+    <p style="font-weight: 600;">Score:<span class="oScore"></span></p>
+ </div>
+</section>
+
+<div class="playingGrid" id="playingGrid">
+    <div class="grids" id="grid1" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid2" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid3" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid4" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid5" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid6" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid7" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid8" onclick="divClicked(this.id)"></div>
+    <div class="grids" id="grid9" onclick="divClicked(this.id)"></div>
+</div>
+<div class="btncont">
+    <button class="newGame" onclick="emptyCells()" id="reBtn"> <strong>New Game </strong></button>
+</div>
+
+<script src="script.js"></script>
+<!------<div class="infoPopUp hidden hidden">
+        <div class="upperDiv">
+           <h3>Instructions - XO Game</h3>
+           <span><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon iconClose"  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg></span>
+            </div><div>
+            <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta adipisci culpa enim facere, iure eaque ex.
+     Sunt quas, quidem similique ipsum perferendis repellendus adipisci voluptas dicta in impedit eius consequatur?
+</p>
+        </div>
+    </div>------>
+
+</body>
+</html>
